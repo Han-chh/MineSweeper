@@ -6,6 +6,7 @@ import java.awt.GridLayout;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.io.File;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -37,8 +38,8 @@ public class SingleGrid extends JButton{
 	private static int sidelength;
 	private static Dimension size = new Dimension(sidelength,sidelength);
 	private boolean isSigned = false;
-	private ImageIcon flag = new ImageIcon(Paths.get(" Images", "flag.jpg").toString());
-	private ImageIcon bomb = new ImageIcon(Paths.get("Images", "bomb.jpg").toString());
+	private ImageIcon flag = new ImageIcon(Paths.get("MineSweeper", "Images", "flag.jpg").toString());
+	private ImageIcon bomb = new ImageIcon(Paths.get("MineSweeper", "Images", "bomb.jpg").toString());
 	private static int remain_bombs;
 	private boolean isOpened = false;
 	private static int sum_rows;
