@@ -13,6 +13,7 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Random;
+import java.nio.file.Paths;
 
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
@@ -36,8 +37,8 @@ public class SingleGrid extends JButton{
 	private static int sidelength;
 	private static Dimension size = new Dimension(sidelength,sidelength);
 	private boolean isSigned = false;
-	private ImageIcon flag = new ImageIcon("flag.jpg");
-	private ImageIcon bomb = new ImageIcon("bomb.jpg");
+	private ImageIcon flag = new ImageIcon(Paths.get(" Images", "flag.jpg").toString());
+	private ImageIcon bomb = new ImageIcon(Paths.get("Images", "bomb.jpg").toString());
 	private static int remain_bombs;
 	private boolean isOpened = false;
 	private static int sum_rows;
