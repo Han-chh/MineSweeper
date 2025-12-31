@@ -28,8 +28,7 @@ A classic Minesweeper game implemented in Java using Swing. Features multiple di
    xcopy /E /I resources bin (windows)
    or
    mkdir -p bin
-   cp -R resources bin/ (Mac)
-
+   cp -R Images bin/ (Mac)
    
    ```
 4. Run the game:
