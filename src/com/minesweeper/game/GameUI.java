@@ -106,14 +106,12 @@ public class GameUI extends JDialog {
 							try {
 								Thread.sleep(50);
 							} catch (InterruptedException e) {
-								// TODO 自动生成的 catch 块
 								e.printStackTrace();
 							}
 						}
 						try {
 							Thread.sleep(100);
 						} catch (InterruptedException e) {
-							// TODO 自动生成的 catch 块
 							e.printStackTrace();
 						}
 						time =  time + 0.1f;

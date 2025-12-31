@@ -73,7 +73,6 @@ public class SingleGrid extends JButton{
 			
 			@Override
 			public void mouseExited(MouseEvent e) {
-				// TODO �Զ����ɵķ������
 				setBorder(BorderFactory.createLineBorder(Color.gray));
 				setFocusable(false);
 			}

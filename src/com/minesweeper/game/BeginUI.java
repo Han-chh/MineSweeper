@@ -116,10 +116,8 @@ public class BeginUI extends JFrame{
 						oos.writeObject(MainGame.History_Record);
 						oos.close();
 					} catch (FileNotFoundException e1) {
-						// TODO 自动生成的 catch 块
 						e1.printStackTrace();
 					} catch (IOException e1) {
-						// TODO 自动生成的 catch 块
 						e1.printStackTrace();
 					}
 				}
