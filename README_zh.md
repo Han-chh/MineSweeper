@@ -22,7 +22,12 @@
 3. 编译源代码：
    ```
    javac -d bin src/com/minesweeper/game/*.java
-   xcopy /E /I resources bin
+   
+   xcopy /E /I resources bin(Windows)
+   or
+   mkdir -p bin
+   cp -R resources bin/ (Mac)
+   
    ```
 4. 运行游戏：
    ```
