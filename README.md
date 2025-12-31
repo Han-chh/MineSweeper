@@ -24,6 +24,7 @@ A classic Minesweeper game implemented in Java using Swing. Features multiple di
 3. Compile the source code:
    ```
    javac -d bin src/com/minesweeper/game/*.java
+   xcopy /E /I resources bin
    ```
 4. Run the game:
    ```

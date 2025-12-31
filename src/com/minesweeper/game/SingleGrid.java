@@ -38,8 +38,11 @@ public class SingleGrid extends JButton{
 	private static int sidelength;
 	private static Dimension size = new Dimension(sidelength,sidelength);
 	private boolean isSigned = false;
-	private ImageIcon flag = new ImageIcon(Paths.get("MineSweeper", "Images", "flag.jpg").toString());
-	private ImageIcon bomb = new ImageIcon(Paths.get("MineSweeper", "Images", "bomb.jpg").toString());
+	private ImageIcon flag = new ImageIcon(
+			getClass().getResource("/Images/flag.jpg"));
+
+	private ImageIcon bomb = new ImageIcon(
+			getClass().getResource("/Images/bomb.jpg"));
 	private static int remain_bombs;
 	private boolean isOpened = false;
 	private static int sum_rows;
