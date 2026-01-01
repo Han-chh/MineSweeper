@@ -1,0 +1,1 @@
+Main-Class: com.minesweeper.game.MainGame
