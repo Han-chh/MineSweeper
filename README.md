@@ -16,6 +16,7 @@ A classic Minesweeper game implemented in Java using Swing. Features multiple di
 ## Requirements
 
 - Java Development Kit (JDK) 8 or higher
+- The jar package is packaged with Java 25.
 
 ## Installation and Running
 
