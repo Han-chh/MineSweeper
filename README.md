@@ -1,57 +1,42 @@
 # MineSweeper
 
-## Description
+A Java desktop Minesweeper implementation with multiple difficulty levels, custom boards, recursive reveals, flags, timing, and history.
 
-A classic Minesweeper game implemented in Java using Swing. Features multiple difficulty levels and time tracking with historical records.
+[中文说明](README_zh.md)
+
+## Overview
+
+This project implements the recognizable Minesweeper loop while exposing the underlying grid algorithms: random mine placement, adjacent-number calculation, recursive opening of empty regions, flag management, win/loss state, and local history.
+
+## Demo
+
+![Animated Minesweeper walkthrough showing board setup, flagging, clues, and recursive reveal](assets/visual-demos/minesweeper-reveal-and-flag.gif)
+
+[Full-resolution MP4 demo](assets/visual-demos/minesweeper-reveal-and-flag.mp4)
+
+The video is recorded directly from the native Swing application and covers difficulty selection, a custom board, history, flagging, timing, number clues, and recursive reveal.
+
+## Screenshot
+
+![A Minesweeper board with an expanded safe region, number clues, and a flag](assets/screenshots/minesweeper-gameplay.png)
 
 ## Features
 
-- Multiple difficulty levels: Simple, Medium, Hard, Custom
-- Time tracking for each game
-- Historical record keeping
-- Win/lose detection
-- Intuitive GUI interface
-- Record clearing functionality
+- Simple, medium, hard, and custom configurations
+- Random mine and number generation
+- Recursive empty-region reveal
+- Flag/meta-click interaction
+- Remaining-mine counter and timer
+- Serialized game history
 
-## Requirements
+## Run
 
-- Java Development Kit (JDK) 8 or higher
-- The jar package is packaged with Java 25.
-
-## Installation and Running
-
-Ensure JDK is installed on your system.
-
-To run the game, use the pre-built JAR file:
+The committed JAR was verified with Java 25:
 
 ```bash
 java -jar MineSweeper.jar
 ```
 
-## How to Play
+## Data note
 
-1. Select a difficulty level
-2. Click "START" to begin
-3. Left-click to reveal cells
-4. Right-click to flag potential mines
-5. Avoid clicking on mines
-6. Reveal all non-mine cells to win
-
-## Project Structure
-
-- `src/com/minesweeper/game/MainGame.java`: Main entry point and game initialization
-- `src/com/minesweeper/game/BeginUI.java`: Difficulty selection and menu interface
-- `src/com/minesweeper/game/GameUI.java`: Main game board interface
-- `src/com/minesweeper/game/SingleGrid.java`: Individual grid cell component
-- `src/com/minesweeper/game/MessageDialogs.java`: Dialog utilities
-- `src/com/minesweeper/game/Number.java`: Number display utilities
-- `HISTORY`: File for storing game records
-- `bin/`: Compiled class files
-
-## Data Storage
-
-Game records are stored in the `HISTORY` file using object serialization.
-
-## Contributing
-
-Contributions are welcome! Please submit issues and pull requests for enhancements.
+The application may read and write `HISTORY`. Use a disposable working directory for demos and tests.
